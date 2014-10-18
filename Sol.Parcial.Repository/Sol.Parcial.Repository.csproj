@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Mapping\EstrenoMap.cs" />
     <Compile Include="Mapping\ParticipantesMap.cs" />
+    <Compile Include="Mapping\PeliculaMap.cs" />
     <Compile Include="Mapping\PremiacionesMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SolParcialContext.cs" />

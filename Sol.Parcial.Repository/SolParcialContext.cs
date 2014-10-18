@@ -28,6 +28,7 @@ namespace Sol.Parcial.Repository
             modelBuilder.Configurations.Add(new ParticipantesMap());
             modelBuilder.Configurations.Add(new PremiacionesMap());
             modelBuilder.Configurations.Add(new EstrenoMap());
+            modelBuilder.Configurations.Add(new PeliculaMap());
         }
     }
 }
