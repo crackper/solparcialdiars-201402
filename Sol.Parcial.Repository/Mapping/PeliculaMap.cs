@@ -39,7 +39,29 @@ namespace Sol.Parcial.Repository.Mapping
                 .HasColumnType("image")
                 .IsOptional();
 
-            ToTable("Pelicula");
+            //table
+            //ToTable("Pelicula");
+
+            //distribucion fisica en dos tablas
+            Map(m =>
+            {
+                m.Properties(e => new
+                {
+                    e.Id,
+                    e.Titulo,
+                    e.Resumen,
+                    e.Nacionalidad,
+                    e.Fecha
+                });
+                m.ToTable("Pelicula");
+            })
+            .Map(m =>
+            {
+                m.Properties(e => new{
+                    e.Cartel
+                });
+                m.ToTable("PeliculaCartel");
+            });
         }
     }
 }
