@@ -56,6 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mapping\EstrenoMap.cs" />
     <Compile Include="Mapping\ParticipantesMap.cs" />
     <Compile Include="Mapping\PremiacionesMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

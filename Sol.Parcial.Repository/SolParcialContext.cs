@@ -11,6 +11,11 @@ namespace Sol.Parcial.Repository
 {
     public class SolParcialContext:DbContext
     {
+        public SolParcialContext()
+        {
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<SolParcialContext>());
+        }
+
         public DbSet<Pelicula> Peliculas { get; set; }
         public DbSet<Estreno> Estrenos { get; set; }
         public DbSet<Director> Directores { get; set; }
@@ -22,6 +27,7 @@ namespace Sol.Parcial.Repository
         {
             modelBuilder.Configurations.Add(new ParticipantesMap());
             modelBuilder.Configurations.Add(new PremiacionesMap());
+            modelBuilder.Configurations.Add(new EstrenoMap());
         }
     }
 }

@@ -12,6 +12,7 @@ namespace Sol.Parcial.BusinessEntities
         public string Lugar { get; set; }
         public DateTime Fecha { get; set; }
 
+        public Int32 PeliculaId { get; set; }
         public Pelicula Pelicula { get; set; }
     }
 }
