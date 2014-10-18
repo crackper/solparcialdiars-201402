@@ -29,6 +29,11 @@ namespace Sol.Parcial.Repository
             modelBuilder.Configurations.Add(new PremiacionesMap());
             modelBuilder.Configurations.Add(new EstrenoMap());
             modelBuilder.Configurations.Add(new PeliculaMap());
+            modelBuilder.Configurations.Add(new FestivalMap());
+            modelBuilder.Configurations.Add(new PersonaMap());
+            modelBuilder.Configurations.Add(new ActorMap());
+            modelBuilder.Configurations.Add(new ProductorMap());
+            modelBuilder.Configurations.Add(new DirectorMap());
         }
     }
 }

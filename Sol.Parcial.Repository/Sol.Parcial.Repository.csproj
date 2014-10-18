@@ -56,10 +56,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mapping\ActorMap.cs" />
+    <Compile Include="Mapping\DirectorMap.cs" />
     <Compile Include="Mapping\EstrenoMap.cs" />
+    <Compile Include="Mapping\FestivalMap.cs" />
     <Compile Include="Mapping\ParticipantesMap.cs" />
     <Compile Include="Mapping\PeliculaMap.cs" />
+    <Compile Include="Mapping\PersonaMap.cs" />
     <Compile Include="Mapping\PremiacionesMap.cs" />
+    <Compile Include="Mapping\ProductorMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SolParcialContext.cs" />
   </ItemGroup>
