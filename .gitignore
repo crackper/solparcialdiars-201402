@@ -1,0 +1,5 @@
+*.exe
+[Dd]ebug*/
+[Bb]in
+obj/
+*.suo
