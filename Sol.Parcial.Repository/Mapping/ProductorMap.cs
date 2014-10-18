@@ -12,8 +12,13 @@ namespace Sol.Parcial.Repository.Mapping
     {
         public ProductorMap()
         {
+            //propiedades
             Property(p => p.TipoProductor)
-                .HasMaxLength(200);
+                .HasMaxLength(200)
+                .IsRequired();
+
+            //tabla
+            ToTable("Productor");
         }
     }
 }

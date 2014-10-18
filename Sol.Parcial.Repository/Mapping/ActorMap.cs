@@ -12,8 +12,13 @@ namespace Sol.Parcial.Repository.Mapping
     {
         public ActorMap()
         {
+            //Propiedades
             Property(p => p.Biografia)
-                .HasMaxLength(200);
+                .HasMaxLength(200)
+                .IsRequired();
+
+            //tabla
+            ToTable("Actor");
         }
     }
 }

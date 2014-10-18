@@ -12,8 +12,13 @@ namespace Sol.Parcial.Repository.Mapping
     {
         public DirectorMap()
         {
+            //propiedades
             Property(p => p.TipoDirector)
-                .HasMaxLength(200);
+                .HasMaxLength(200)
+                .IsRequired();
+
+            //tabla
+            ToTable("Director");
         }
     }
 }
